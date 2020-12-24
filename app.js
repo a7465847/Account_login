@@ -1,5 +1,8 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
+require('./config/mongoose')
+
+
 const app = express()
 const post = 3000
 
