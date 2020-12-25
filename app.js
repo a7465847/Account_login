@@ -13,5 +13,5 @@ app.set('view engine', 'hbs')
 app.use(routes) // 路由
 
 app.listen(post, () => {
-  console.log(`Express is running on http://localhost:${post}`)
+  console.log(`Express is running on http://localhost:${post}/users/login`)
 })
