@@ -5,8 +5,14 @@ const userSchema = new Schema({
     type: 'string',
     require: true
   },
-  email:{ type: 'string' },
-  password:{ type: 'string' }
+  email:{
+    type: 'string',
+    require: true
+  },
+  password:{
+    type: 'string',
+    require: true
+  },
 })
 
 module.exports = mongoose.model('User', userSchema)
