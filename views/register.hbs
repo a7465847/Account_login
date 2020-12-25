@@ -1,1 +1,26 @@
-<h2>Register</h2>
+<div class="row mt-5 ">
+  <div class="col-md-5 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mt-3">新用戶註冊系統</h1>
+      <form action="/users/register" method="POST">
+       <div class="form-group">
+          <label for="email">使用者姓名</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="請輸入 Name">
+        </div>
+        <div class="form-group">
+          <label for="email">使用者信箱</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="請輸入 Email">
+        </div>
+        <div class="form-group">
+          <label for="password">使用者密碼</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="請輸入 Password">
+        </div>
+        <div class="form-group">
+          <label for="password">再次輸入密碼</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="請輸入 Password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">開始使用</button>
+      </form>
+    </div>
+  </div>
+</div>
