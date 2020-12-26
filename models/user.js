@@ -13,6 +13,10 @@ const userSchema = new Schema({
     type: 'string',
     require: true
   },
+  createdAt: {
+    type: Date,
+    default: Date.now
+  }
 })
 
 module.exports = mongoose.model('User', userSchema)
