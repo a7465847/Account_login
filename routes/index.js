@@ -2,10 +2,10 @@ const express = require('express')
 const router = express.Router()
 const home = require('./modules/home')
 const user = require('./modules/users')
-// const { authenticate } = require('../middleware/auth')
+const { authenticate } = require('../middleware/auth')
 
 
 router.use('/users', user)
-router.use('/', home)
+router.use('/', authenticate, home)
 
 module.exports = router
