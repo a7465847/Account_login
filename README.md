@@ -1,20 +1,23 @@
 # 餐廳清單
-採用 Node.js 和 Express 打造的餐廳清單網站，使用 MongoDB 資料庫存取資料，使用者可以在此站上查看餐廳訊息，並可透過餐廳名稱尋找餐廳資訊，並且具有 CRUD 功能滿足使用者基本需求 !
+採用 Node.js 和 Express 打造的簡易登入系統，用來學習 express-session 與 passport 的初步認識
 
+## 功能描述 (features)
+- 可輸入帳號密碼登入 Email & Password
+- 註冊新用戶
+- 驗證是否重複註冊
+- 登入密碼錯誤時會自行跳回登入頁面
+- 驗證登入狀態 無法直接左上角前往首頁
 
 ## 專案畫面
-![](https://i.imgur.com/DBwyyBN.png)
-![](https://i.imgur.com/voVC3r3.png)
-![](https://i.imgur.com/nMxMhJ1.png)
-![](https://i.imgur.com/7v7eo3U.png)
-![](https://i.imgur.com/EPpbZPf.png)
+![](https://i.imgur.com/Z7xbXpi.png)
 
 ## 環境建置(prerequisites)
 - Node.js v10.15.0
 - Express v4.17.1
 - Express-handlebars v5.2.0
 - mongodb with mongoose as ODM
-
+- express-session v1.17.1
+- passport v0.4.1
 ## 安裝與執行步驟 (installation and execution)
 
 - 使用 Git Bash
@@ -57,12 +60,4 @@
 8. 在瀏覽器輸入 http://localhost:3000 開始使用
 
 
-## 功能描述 (features)
-- 透過尋找餐廳，可以快速篩選出你期盼的餐廳
-- 今天想吃不同風格 ? 透過搜尋來判別類別
-- 點擊餐廳頁面有詳細資訊
-- 點擊餐廳頁面圖示會直接導航為你 google 導航至餐廳位置
-- 新增收藏已久的餐廳資訊
-- 修改清單內容
-- 刪除不愛的餐廳清單
 
