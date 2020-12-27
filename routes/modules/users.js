@@ -14,8 +14,24 @@ router.get('/register', (req, res) => {
 })
 
 router.post('/register', (req, res) => {
-  console.log('req.body', req.body)
-  res.render('index')
+  const {name, email, password} = req.body
+  User.findOne({ email }).then(user => {
+    if(user){
+      res.render('register',{
+        name,
+        email,
+        password
+      })
+    } else {
+      return User.create({
+        name,
+        email,
+        password
+      })
+      .then(() => res.redirect('/'))
+      .catch(() => console.log(err))
+    }
+  })
 })
 
 module.exports = router

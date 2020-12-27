@@ -5,24 +5,29 @@
       <form action="/users/register" method="POST">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name" value="{{ name }}">
+          <input type="text" id="name" name="name" class="form-control" placeholder="輸入姓名" value="{{ name }}">
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email"
+          <input type="email" id="email" name="email" class="form-control" placeholder="輸入信箱"
             value="{{ email }}">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password"
+          <input type="password" id="password" name="password" class="form-control" placeholder="輸入密碼"
             value="{{ password }}">
         </div>
         <div class="form-group">
           <label for="confirmPassword">Confirm Password</label>
           <input type="password" id="confirmPassword" name="confirmPassword" class="form-control"
-            placeholder="Confirm Password">
+            placeholder="再次確認密碼">
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Register</button>
+        {{#if email}}
+        <div class="d-flex justify-content-center p-3 mb-2 bg-danger text-white rounded-pill">
+          <h4>信箱重複註冊</h4>
+        </div>
+        {{/if}}
+        <button type="submit" class="btn btn-primary btn-block">確認送出</button>
       </form>
     </div>
   </div>
