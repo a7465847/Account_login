@@ -24,7 +24,7 @@
 
 1. 將專案clone到本地環境
    ```
-   git clone https://github.com/a7465847/Restaurant_List-Project.git
+   git clone https://github.com/a7465847/Account_login.git
    ```
 
 2. 進入專案資料夾
