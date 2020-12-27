@@ -13,4 +13,9 @@ router.get('/register', (req, res) => {
   res.render('register')
 })
 
+router.post('/register', (req, res) => {
+  console.log('req.body', req.body)
+  res.render('index')
+})
+
 module.exports = router
