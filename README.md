@@ -1,4 +1,4 @@
-# 餐廳清單
+# 登入系統
 採用 Node.js 和 Express 打造的簡易登入系統，用來學習 express-session 與 passport 的初步認識
 
 ## 功能描述 (features)
